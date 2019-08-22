@@ -1,0 +1,109 @@
+.contact-app {
+  width: 100%;
+  max-width: 500px;
+  padding: 0;
+  padding-bottom: 20px;
+  background: $bg-white;
+  display: block;
+  margin: 80px auto 0;
+  border-radius: 20px;
+  box-shadow: 0 30px 120px rgba($dark, 0.5);
+  overflow: hidden;
+  border: 2px solid rgba(#fff, 0.3);
+  transition: 0.4s ease-out;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: ' ';
+    bottom: -55px;
+    right: -70px;
+    width: 100%;
+    height: 400px;
+    background: url('../images/welcome.png');
+    z-index: 1;
+    background-size: cover;
+    opacity: 0.3;
+  }
+
+  // https://icons8.com/ouch/illustration/clip-welcome
+
+  &:hover {
+    box-shadow: 0 70px 150px rgba($dark, 0.59);
+    transform: scale(1.005);
+  }
+
+  .header {
+    padding: 30px 50px 0;
+    background-image: linear-gradient(
+      to right,
+      #2a80aa,
+      #1a94b9,
+      #0fa8c4,
+      #1ebccc,
+      #3bd0d0
+    );
+    color: $bg-white;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+
+    .header-photo {
+      position: absolute;
+      top: 55px;
+      right: 50px;
+      // transform: translateY(50%);
+      width: 50px;
+      z-index: 1;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    h1 {
+      text-shadow: 0 0 10px rgba($dark, 0.4);
+      text-transform: capitalize;
+      letter-spacing: -1px;
+      font-size: 36px;
+      font-weight: $bold;
+      // color: rgba($bg-white, 0.95);
+      // color: lighten($turq, 42);
+      color: $light;
+      margin-top: 0;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: $light;
+      margin-bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      content: '';
+      width: 400px;
+      height: 400px;
+      clip-path: circle(50.1% at 50% 50%);
+      background: $blue;
+      opacity: 0.5;
+      z-index: -1;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: -100px;
+      right: -50px;
+      content: '';
+      width: 400px;
+      height: 400px;
+      clip-path: circle(50.1% at 50% 50%);
+      //   background: darken($turq, 10);
+      background: $blue;
+      opacity: 0.25;
+      z-index: -1;
+    }
+  }
+}

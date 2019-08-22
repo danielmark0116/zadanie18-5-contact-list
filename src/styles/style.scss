@@ -1,0 +1,23 @@
+// VARs
+@import 'variables';
+
+// FONT
+@import 'font';
+
+// COMPONENTs
+@import 'components/app';
+@import 'components/contactForm';
+@import 'components/contacts';
+@import 'components/contact';
+
+body {
+  background-image: linear-gradient(
+    to right,
+    #ace778,
+    #aaec6f,
+    #a7f266,
+    #a4f75c,
+    #a1fc51
+  );
+  font-family: 'Nunito', sans-serif;
+}
