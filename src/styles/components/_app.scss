@@ -26,8 +26,6 @@
     opacity: 0.3;
   }
 
-  // https://icons8.com/ouch/illustration/clip-welcome
-
   &:hover {
     box-shadow: 0 70px 150px rgba($dark, 0.59);
     transform: scale(1.005);
@@ -52,7 +50,6 @@
       position: absolute;
       top: 55px;
       right: 50px;
-      // transform: translateY(50%);
       width: 50px;
       z-index: 1;
 
@@ -67,8 +64,6 @@
       letter-spacing: -1px;
       font-size: 36px;
       font-weight: $bold;
-      // color: rgba($bg-white, 0.95);
-      // color: lighten($turq, 42);
       color: $light;
       margin-top: 0;
     }
@@ -100,7 +95,6 @@
       width: 400px;
       height: 400px;
       clip-path: circle(50.1% at 50% 50%);
-      //   background: darken($turq, 10);
       background: $blue;
       opacity: 0.25;
       z-index: -1;
